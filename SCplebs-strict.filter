@@ -633,7 +633,7 @@ Show # CURRENCY - High Value
 
 Show # CURRENCY - High Value
   Class == "Stackable Currency"
-  BaseType == "Chaos Orb" "Gold Key" "Exalted Orb" "Divine Orb" "Orb of Annulment" "Greater Jeweller's Orb" "Perfect Jeweller's Orb" "Gemcutter's Prism" "Cartographer's Chisel" "Journeyman Cartographer's Seal" "Apprentice Cartographer's Seal" "Master Cartographer's Seal"
+  BaseType == "Gold Key" "Divine Orb" "Orb of Annulment" "Greater Jeweller's Orb" "Perfect Jeweller's Orb" "Gemcutter's Prism" "Cartographer's Chisel" "Journeyman Cartographer's Seal" "Apprentice Cartographer's Seal" "Master Cartographer's Seal"
   SetTextColor 255 0 0 255
   SetBackgroundColor 255 255 255 255
   SetBorderColor 255 0 0 255
@@ -644,7 +644,7 @@ Show # CURRENCY - High Value
 	
 Show # CURRENCY - Mid Value
   Class == "Stackable Currency"
-  BaseType ==  "Glassblower's Bauble" "Vaal Orb" "Orb of Alchemy" "Regal Orb" "Exotic Coinage" "Orb of Chance" "Bronze Key" "Silver Key"
+  BaseType ==  "Glassblower's Bauble" "Vaal Orb" "Orb of Alchemy" "Regal Orb" "Exotic Coinage" "Orb of Chance" "Bronze Key" "Silver Key" "Chaos Orb" "Exalted Orb"
 	SetTextColor 255 255 255 255
 	SetBorderColor 255 255 255 255
 	SetBackgroundColor 240 90 35 255
@@ -835,15 +835,17 @@ Show # Gems
 
 Show # Chance Orb Items
   Rarity Normal
-  BaseType == "Stellar Amulet" "Heavy Belt" "Sapphire Ring"
+  BaseType == "Stellar Amulet" "Sapphire Ring"
 	AreaLevel >= 69
-  SetTextColor 0 191 0
-  SetBorderColor 0 191 0
-  SetBackgroundColor 74 0 160
+  SetTextColor 255 0 0 255
+  SetBackgroundColor 255 255 255 255
+  SetBorderColor 255 0 0 255
   SetFontSize 45
   MinimapIcon 2 Purple Triangle
-	PlayEffect Purple Temp
-	
+	PlayEffect Red	
+	MinimapIcon 0 Red Triangle
+	PlayAlertSound 6 300
+
 #--------------------------
 # GOOD BOWS AND QUIVERS
 #--------------------------
@@ -911,35 +913,6 @@ Show # STR Bases ilvl 80+ Magic
   SetBackgroundColor 30 30 30	
   SetFontSize 35
   MinimapIcon 2 Red Diamond 
-	PlayEffect Red Temp
-	
-Show # STR Bases Magic
-  Rarity Magic
-  BaseType == "Expert Iron Cuirass" "Expert Steel Plate" "Expert Vaal Cuirass" "Expert Bolstered Mitts" "Expert Moulded Mitts" "Expert Riveted Mitts" "Expert Iron Greaves" "Expert Trimmed Greaves" "Expert Stone Greaves" "Expert Soldier Greathelm" "Expert Spired Greathelm" "Expert Elite Greathelm" "Expert Braced Tower Shield" "Expert Rampart Tower Shield" "Expert Stone Tower Shield"
-  SetTextColor 0 75 250
-  SetBorderColor 255 0 0
-  SetBackgroundColor 30 30 30	
-  SetFontSize 35
-	PlayEffect Red Temp
-
-Show # STR Bases ilvl 80+ Normal
-  Rarity Normal
-  BaseType == "Expert Iron Cuirass" "Expert Steel Plate" "Expert Vaal Cuirass" "Expert Bolstered Mitts" "Expert Moulded Mitts" "Expert Riveted Mitts" "Expert Iron Greaves" "Expert Trimmed Greaves" "Expert Stone Greaves" "Expert Soldier Greathelm" "Expert Spired Greathelm" "Expert Elite Greathelm" "Expert Braced Tower Shield" "Expert Rampart Tower Shield" "Expert Stone Tower Shield"
-  AreaLevel >= 80
-  SetTextColor 180 180 180
-  SetBorderColor 255 0 0
-  SetBackgroundColor 30 30 30	
-  SetFontSize 35
-  MinimapIcon 2 Red Diamond 
-	PlayEffect Red Temp
-	
-Show # STR Bases Normal
-  Rarity Normal
-  BaseType == "Expert Iron Cuirass" "Expert Steel Plate" "Expert Vaal Cuirass" "Expert Bolstered Mitts" "Expert Moulded Mitts" "Expert Riveted Mitts" "Expert Iron Greaves" "Expert Trimmed Greaves" "Expert Stone Greaves" "Expert Soldier Greathelm" "Expert Spired Greathelm" "Expert Elite Greathelm" "Expert Braced Tower Shield" "Expert Rampart Tower Shield" "Expert Stone Tower Shield"
-  SetTextColor 180 180 180
-  SetBorderColor 255 0 0
-  SetBackgroundColor 30 30 30	
-  SetFontSize 35
 	PlayEffect Red Temp
 	
 #--------------------------
@@ -1144,7 +1117,7 @@ Show # Good Bases - Normal
 
 Show # Good Jewelry - Rare
   Rarity Rare
-  BaseType == "Gold Ring" "Gold Amulet" "Solar Amulet" "Azure Amulet"
+  BaseType == "Gold Ring" "Gold Amulet" "Solar Amulet" "Azure Amulet" "Stellar Amulet"
   SetTextColor 255 255 119
   SetBorderColor 255 165 0
   SetBackgroundColor 30 30 30	
@@ -1154,7 +1127,7 @@ Show # Good Jewelry - Rare
 
 Show # Good Jewelry - Magic
   Rarity Magic
-  BaseType == "Gold Ring" "Gold Amulet" "Solar Amulet" "Azure Amulet"
+  BaseType == "Gold Ring" "Gold Amulet" "Solar Amulet" "Azure Amulet" "Stellar Amulet" 
   SetTextColor 0 75 250 255
   SetBorderColor 255 165 0
   SetBackgroundColor 30 30 30
@@ -1164,7 +1137,7 @@ Show # Good Jewelry - Magic
 
 Show # Good Jewelry - Normal
   Rarity Normal
-  BaseType == "Gold Ring" "Gold Amulet" "Solar Amulet" "Azure Amulet"
+  BaseType == "Gold Ring" "Gold Amulet" "Solar Amulet" "Azure Amulet" "Stellar Amulet"
   SetTextColor 180 180 180
   SetBorderColor 255 165 0
   SetBackgroundColor 30 30 30
