@@ -465,7 +465,7 @@ Hide # Charms
 	PlayAlertSound 16 300
 	MinimapIcon 0 Purple Circle
 	PlayEffect Purple
-a
+
 Hide # Charms
 	Class == "Charm"
 	SetFontSize 45
