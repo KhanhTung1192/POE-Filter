@@ -653,7 +653,7 @@ Show # CURRENCY - High Value
 	
 Show # CURRENCY - Mid Value
   Class == "Stackable Currency"
-  BaseType ==  "Glassblower's Bauble" "Vaal Orb" "Orb of Alchemy" "Regal Orb" "Exotic Coinage" "Armourer's Scrap" "Blacksmith's Whetstone" "Gemcutter's Prism" "Chaos Orb" "Exalted Orb"
+  BaseType ==  "Glassblower's Bauble" "Vaal Orb" "Orb of Alchemy" "Regal Orb" "Exotic Coinage" "Gemcutter's Prism" "Chaos Orb" "Exalted Orb"
 	SetTextColor 255 255 255 255
 	SetBorderColor 255 255 255 255
 	SetBackgroundColor 240 90 35 255
@@ -661,6 +661,15 @@ Show # CURRENCY - Mid Value
 	PlayAlertSound 1 200
 	MinimapIcon 0 Orange Triangle
 	PlayEffect Orange
+
+Show # CURRENCY - Low Value
+  BaseType ==  "Armourer's Scrap" "Blacksmith's Whetstone"
+	SetTextColor 255 255 255 255
+	SetBorderColor 255 255 255 255
+	SetBackgroundColor 240 90 35 255
+  SetFontSize 40
+	MinimapIcon 0 Yellow Triangle
+	PlayEffect Yellow
 
 Show # ShardsHigh
   Class "Currency"
@@ -1096,7 +1105,7 @@ Show # Good Bases ilvl 80 - Rare
 
 Show # Good  Bases ilvl 80 - Magic
   Rarity Magic
-  BaseType == "Expert Dualstring Bow" "Attuned Wand" "Siphoning Wand" "Omen Sceptre" "Expert Barrier Quarterstaff" "Expert Gothic Quarterstaff"
+  BaseType == "Expert Dualstring Bow" "Attuned Wand" "Siphoning Wand" "Omen Sceptre" "Stoic Sceptre" "Rattling Sceptre" "Expert Barrier Quarterstaff" "Expert Gothic Quarterstaff"
   AreaLevel >= 80
   SetTextColor 0 75 250 255
   SetBorderColor 254 128 222
@@ -1110,7 +1119,7 @@ Hide # Good  Bases ilvl 80 - Magic
 
 Show # Good Bases ilvl 80 - Normal
   Rarity Normal
-  BaseType == "Expert Dualstring Bow" "Attuned Wand" "Siphoning Wand" "Omen Sceptre" "Expert Barrier Quarterstaff" "Expert Gothic Quarterstaff"
+  BaseType == "Expert Dualstring Bow" "Attuned Wand" "Siphoning Wand" "Expert Gothic Quarterstaff"
   AreaLevel >= 80
   SetTextColor 180 180 180
   SetBorderColor 254 128 222
