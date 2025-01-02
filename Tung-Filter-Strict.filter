@@ -692,7 +692,7 @@ Hide # ShardsLow
 	
 Hide # Low Tier
 	BaseType == "Orb of Transmutation" "Orb of Augmentation" "Lesser Jeweller's Orb" 
-	AreaLevel >= 70
+	AreaLevel >= 1
 	SetFontSize 30
   SetTextColor 0 0 0 255
   SetBackgroundColor 255 255 255 150
@@ -729,7 +729,7 @@ Show # Uncut Skill Gem
 	PlayAlertSound 10 300
 	MinimapIcon 1 Green Circle
 
-Show # Uncut Skill Gem
+Hide # Uncut Skill Gem
 	BaseType == "Uncut Skill Gem"
 	ItemLevel >= 18
 	SetFontSize 30
@@ -780,7 +780,7 @@ Show # Uncut Spirit Gem
 	PlayAlertSound 10 300
 	MinimapIcon 1 Green Circle
 	
-Show # Uncut Spirit Gem
+Hide # Uncut Spirit Gem
 	BaseType == "Uncut Spirit Gem"
 	ItemLevel >= 18
 	SetFontSize 30
@@ -903,7 +903,7 @@ Show # Expert Dualstring Bow
 Hide # STR Bases ilvl 80+ Rare
   Rarity Rare
   BaseType == "Expert Iron Cuirass" "Expert Steel Plate" "Expert Vaal Cuirass" "Expert Bolstered Mitts" "Expert Moulded Mitts" "Expert Riveted Mitts" "Expert Iron Greaves" "Expert Trimmed Greaves" "Expert Stone Greaves" "Expert Soldier Greathelm" "Expert Spired Greathelm" "Expert Elite Greathelm" "Expert Braced Tower Shield" "Expert Rampart Tower Shield" "Expert Stone Tower Shield"
-  AreaLevel >= 80
+  AreaLevel >= 1
   SetTextColor 255 255 119
   SetBorderColor 255 0 0
   SetBackgroundColor 30 30 30	
@@ -923,7 +923,7 @@ Hide # STR Bases Rare
 Hide # STR Bases ilvl 80+ Magic
   Rarity Magic
   BaseType == "Expert Iron Cuirass" "Expert Steel Plate" "Expert Vaal Cuirass" "Expert Bolstered Mitts" "Expert Moulded Mitts" "Expert Riveted Mitts" "Expert Iron Greaves" "Expert Trimmed Greaves" "Expert Stone Greaves" "Expert Soldier Greathelm" "Expert Spired Greathelm" "Expert Elite Greathelm" "Expert Braced Tower Shield" "Expert Rampart Tower Shield" "Expert Stone Tower Shield"
-  AreaLevel >= 80
+  AreaLevel >= 1
   SetTextColor 0 75 250
   SetBorderColor 255 0 0
   SetBackgroundColor 30 30 30	
@@ -943,7 +943,7 @@ Hide # STR Bases Magic
 Hide # STR Bases ilvl 80+ Normal
   Rarity Normal
   BaseType == "Expert Iron Cuirass" "Expert Steel Plate" "Expert Vaal Cuirass" "Expert Bolstered Mitts" "Expert Moulded Mitts" "Expert Riveted Mitts" "Expert Iron Greaves" "Expert Trimmed Greaves" "Expert Stone Greaves" "Expert Soldier Greathelm" "Expert Spired Greathelm" "Expert Elite Greathelm" "Expert Braced Tower Shield" "Expert Rampart Tower Shield" "Expert Stone Tower Shield"
-  AreaLevel >= 80
+  AreaLevel >= 1
   SetTextColor 180 180 180
   SetBorderColor 255 0 0
   SetBackgroundColor 30 30 30	
@@ -1007,7 +1007,7 @@ Hide # DEX Bases Magic
 Hide # DEX Bases ilvl 80+ Normal
   Rarity Normal
   BaseType == "Armoured Vest" "Expert Pathfinder Coat" "Expert Serpentscale Coat" "Expert Studded Vest" "Exquisite Vest" "Mail Coat" "Engraved Bracers" "Expert Firm Bracers" "Expert Sectioned Bracers" "Expert Spined Bracers" "Embroidered Boots" "Expert Laced Boots" "Expert Lizardscale Boots" "Expert Steeltoe Boots" "Advanced Hunter Hood" "Expert Felt Cap" "Expert Hunter Hood" "Expert Swathed Cap" "Aegis Buckler" "Expert Edged Buckler" "Expert Plated Buckler" "Expert Spiked Buckler"
-  AreaLevel >= 80
+  AreaLevel >= 1
   SetTextColor 180 180 180
   SetBorderColor 57 255 20
   SetBackgroundColor 30 30 30	
@@ -1202,7 +1202,7 @@ Show # Good Jewelry - Normal
 
 Hide # Bad Bow Base
   BaseType "Cultist" "Advanced"
-  AreaLevel >= 65
+  AreaLevel >= 1
 	
 #--------------------------
 # Show Uniques
@@ -1279,12 +1279,12 @@ Hide # 1 Socket Workaround
 Hide # Low Flasks
   BaseType == "Lesser Life Flask" "Medium Life Flask" "Greater Life Flask" "Grand Life Flask" "Giant Life Flask" "Colossal Life Flask" "Gargantuan Life Flask" "Transcendent Life Flask" "Lesser Mana Flask" "Medium Mana Flask" "Greater Mana Flask" "Grand Mana Flask" "Giant Mana Flask" "Colossal Mana Flask" "Gargantuan Mana Flask" "Transcendent Mana Flask"
 	Rarity <= Rare
-	AreaLevel >= 65
+	AreaLevel >= 1
 	
 Hide # Non Superior Flasks
   Class == "Life Flasks" "Mana Flasks"
 	Rarity <= Rare
-	AreaLevel >= 65
+	AreaLevel >= 1
 	Quality < 1
 	
 #--------------------------
@@ -1294,7 +1294,7 @@ Hide # Non Superior Flasks
 Hide # Non Rare in maps
   Class == "Gloves" "Boots" "Body Armours"  "Helmets" "Quivers" "Shields" "Foci" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Quarterstaves" "Crossbows" "Traps" "Claws" "Daggers" "Wands" "One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Spears" "Flails"
 	Rarity <= Magic
-	AreaLevel >= 65
+	AreaLevel >= 1
 
 #--------------------------
 # Normal. Magic, Rare
