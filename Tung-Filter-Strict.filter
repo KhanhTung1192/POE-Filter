@@ -471,7 +471,7 @@ Show # Tablets
 
 Show # Catalysts
 	Class == "Stackable Currency"
-	BaseType == "Adaptive Catalyst"
+	BaseType == "Adaptive Catalyst" "Neural Catalyst"
 	SetFontSize 45
 	SetTextColor 0 0 0 255
 	SetBackgroundColor 255 83 83 255
@@ -480,7 +480,7 @@ Show # Catalysts
 	MinimapIcon 1 Orange Moon
 Hide # Catalysts
 	Class == "Stackable Currency"
-	BaseType ==  "Carapace Catalyst" "Chayula's Catalyst" "Esh's Catalyst" "Flesh Catalyst" "Neural Catalyst" "Reaver Catalyst" "Sibilant Catalyst" "Skittering Catalyst" "Tul's Catalyst" "Uul-Netol's Catalyst" "Xoph's Catalyst"
+	BaseType ==  "Carapace Catalyst" "Chayula's Catalyst" "Esh's Catalyst" "Flesh Catalyst" "Reaver Catalyst" "Sibilant Catalyst" "Skittering Catalyst" "Tul's Catalyst" "Uul-Netol's Catalyst" "Xoph's Catalyst"
 
 #--------------------------
 # Distilled
