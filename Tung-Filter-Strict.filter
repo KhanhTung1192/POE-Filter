@@ -673,7 +673,7 @@ Show # CURRENCY - Low Value
 
 Show # ShardsHigh
   Class "Currency"
-  BaseType "Horizon Shard" "Binding Shard" "Regal Shard" "Engineer's Shard" "Annulment Shard" "Horizon Shard" "Harbinger's Shard" "Ancient Shard" "Exalted Shard" "Chance Shard"
+  BaseType "Horizon Shard" "Binding Shard" "Engineer's Shard" "Annulment Shard" "Horizon Shard" "Harbinger's Shard" "Ancient Shard" "Exalted Shard" "Chance Shard"
 	SetFontSize 40
   SetTextColor 255 0 0 255
   SetBackgroundColor 0 0 0
@@ -683,7 +683,7 @@ Show # ShardsHigh
 	
 Hide # ShardsLow
 	Class == "Stackable Currency"
-  BaseType == "Alteration Shard" "Transmutation Shard" "Artificer's Shard" "Alchemy Shard"  "Chaos Shard"
+  BaseType == "Alteration Shard" "Transmutation Shard" "Artificer's Shard" "Alchemy Shard"  "Chaos Shard" "Regal Shard"
 	AreaLevel >= 70
 	SetFontSize 25
   SetTextColor 0 0 0 255
