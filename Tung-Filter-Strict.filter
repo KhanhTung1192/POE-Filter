@@ -817,7 +817,6 @@ Show # Chance Orb Items
   SetBackgroundColor 255 255 255 255
   SetBorderColor 255 0 0 255
   SetFontSize 45
-	PlayAlertSound 6 300
 	MinimapIcon 0 Red Triangle
 	PlayEffect Red	
 	
