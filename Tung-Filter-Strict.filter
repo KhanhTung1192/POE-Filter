@@ -768,7 +768,7 @@ Hide # Uncut Spirit Gem
 # Uncut Support Gem
 #--------------------------
 
-Show # Uncut Support Gem
+Hide # Uncut Support Gem
 	BaseType == "Uncut Support Gem"
 	ItemLevel >= 3
 	SetFontSize 45
@@ -777,7 +777,7 @@ Show # Uncut Support Gem
 	SetBackgroundColor 0 0 0
 	PlayEffect Green Temp
 	
-Show # Uncut Support Gem
+Hide # Uncut Support Gem
 	BaseType == "Uncut Support Gem"
   ItemLevel >= 2
 	SetFontSize 35
