@@ -488,7 +488,7 @@ Hide # Catalysts
 
 Show # Distilled
 	Class == "Stackable Currency"
-	BaseType == "Distilled Despair" "Distilled Disgust" "Distilled Envy" "Distilled Fear" "Distilled Isolation" "Distilled Paranoia" "Distilled Suffering"
+	BaseType == "Distilled Despair" "Distilled Disgust" "Distilled Envy" "Distilled Fear" "Distilled Isolation" "Distilled Paranoia" "Distilled Suffering" "Distilled Greed" "Distilled Guilt" "Distilled Ire"
 	SetTextColor 0 0 0 255
 	SetBackgroundColor 255 0 0 255
 	SetBorderColor 0 0 0 255
@@ -496,9 +496,6 @@ Show # Distilled
 	PlayAlertSound 1 300
 	MinimapIcon 0 Red Pentagon
 	PlayEffect Red 
-Hide # Distilled
-	Class == "Stackable Currency"
-	BaseType == "Distilled Greed" "Distilled Guilt" "Distilled Ire"
 
 #--------------------------
 # Essences
