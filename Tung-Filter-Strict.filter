@@ -598,7 +598,7 @@ Show # CURRENCY - High Value
 
 Show # CURRENCY - High Value
   Class == "Stackable Currency"
-  BaseType == "Divine Orb" "Orb of Annulment" "Greater Jeweller's Orb" "Perfect Jeweller's Orb" "Cartographer's Chisel" "Journeyman Cartographer's Seal" "Apprentice Cartographer's Seal" "Master Cartographer's Seal"
+  BaseType == "Divine Orb" "Stellar Amulet" "Orb of Annulment" "Greater Jeweller's Orb" "Perfect Jeweller's Orb" "Cartographer's Chisel" "Journeyman Cartographer's Seal" "Apprentice Cartographer's Seal" "Master Cartographer's Seal"
   SetTextColor 255 0 0 255
   SetBackgroundColor 255 255 255 255
   SetBorderColor 255 0 0 255
@@ -809,7 +809,7 @@ Show # Gems
 
 Show # Chance Orb Items
   Rarity Normal
-  BaseType == "Stellar Amulet" "Sapphire Ring"
+  BaseType == "Sapphire Ring"
   SetTextColor 255 0 0 255
   SetBackgroundColor 255 255 255 255
   SetBorderColor 255 0 0 255
