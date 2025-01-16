@@ -312,7 +312,7 @@ Show # Trial Coins
 	PlayAlertSound 1 300
 	PlayEffect Red
 	
-Show # Inscribed Ultimatum
+Hide # Inscribed Ultimatum
 	BaseType == "Inscribed Ultimatum" 
 	SetFontSize 45
 	SetTextColor 255 171 255
@@ -674,7 +674,7 @@ Show # Uncut Skill Gem 20
 	MinimapIcon 0 Green Circle
 	PlayEffect Green
 
-Show # Uncut Skill Gem
+Hide # Uncut Skill Gem
 	BaseType == "Uncut Skill Gem"
 	ItemLevel >= 19
 	SetFontSize 45
@@ -725,7 +725,7 @@ Show # Uncut Spirit Gem 20
 	MinimapIcon 0 Green Circle
 	PlayEffect Green	
 
-Show # Uncut Spirit Gem
+Hide # Uncut Spirit Gem
 	BaseType == "Uncut Spirit Gem"
 	ItemLevel >= 19
 	SetFontSize 45
@@ -809,12 +809,12 @@ Show # Gems
 
 Show # Chance Orb Items
   Rarity Normal
-  BaseType == "Sapphire Ring" "Stellar Amulet"
+  BaseType == "Sapphire Ring" "Stellar Amulet" 
   SetTextColor 255 0 0 255
   SetBackgroundColor 255 255 255 255
   SetBorderColor 255 0 0 255
   SetFontSize 45
-  	PlayAlertSound ShMirror 300
+	PlayAlertSound 1 200
 	MinimapIcon 0 Red Triangle
 	PlayEffect Red	
 	
@@ -1134,7 +1134,7 @@ Show # Good Jewelry - Rare
 
 Show # Good Jewelry - Magic
   Rarity Magic
-  BaseType == "Gold Ring" "Gold Amulet" "Solar Amulet" "Azure Amulet"
+  BaseType == "Gold Ring" "Gold Amulet" "Solar Amulet" "Amethyst Ring" "Prismatic Ring" "Stellar Amulet" "Amber Amulet" "Pearl Ring" "Lapis Amulet" "Jade Amulet"
   SetTextColor 0 75 250 255
   SetBorderColor 255 165 0
   SetBackgroundColor 30 30 30
@@ -1144,7 +1144,7 @@ Show # Good Jewelry - Magic
 
 Show # Good Jewelry - Normal
   Rarity Normal
-  BaseType == "Gold Ring" "Gold Amulet" "Solar Amulet" "Azure Amulet"
+  BaseType == "Iron Ring" "Lazuli Ring" "Ruby Ring" "Sapphire Ring" "Topaz Ring" "Amethyst Ring" "Emerald Ring" "Pearl Ring" "Prismatic Ring" "Gold Ring" "Unset Ring" "Azure Amulet" "Crimson Amulet" "Amber Amulet" "Solar Amulet" "Stellar Amulet" "Bloodstone Amulet" "Lunar Amulet" "Lapis Amulet" "Jade Amulet" "Gold Amulet"
   SetTextColor 180 180 180
   SetBorderColor 255 165 0
   SetBackgroundColor 30 30 30
