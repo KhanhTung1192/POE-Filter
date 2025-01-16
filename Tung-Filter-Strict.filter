@@ -164,11 +164,10 @@ Show # Simulacrum
 	
 Show # Breachstones
   Class == "Breachstones"
-	SetFontSize 45
+	SetFontSize 35
   SetTextColor 184 0 255
   SetBackgroundColor 255 255 255
   SetBorderColor 184 0 255
-  PlayAlertSound 1 300
 	MinimapIcon 0 Purple Hexagon
 	PlayEffect Purple
 	
