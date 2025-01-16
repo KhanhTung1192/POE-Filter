@@ -587,7 +587,7 @@ Show # CURRENCY - Divine Orb
 	
 Show # CURRENCY - High Value
   Class == "Stackable Currency"
-  BaseType == "Greater Jeweller's Orb" "Perfect Jeweller's Orb" "Orb of Chance"
+  BaseType == "Greater Jeweller's Orb" "Perfect Jeweller's Orb" 
   SetTextColor 255 0 0 255
   SetBackgroundColor 255 255 255 255
   SetBorderColor 255 0 0 255
@@ -598,7 +598,7 @@ Show # CURRENCY - High Value
 
 Show # CURRENCY - High Value
   Class == "Stackable Currency"
-  BaseType == "Divine Orb" "Orb of Annulment" "Greater Jeweller's Orb" "Perfect Jeweller's Orb" "Cartographer's Chisel" "Journeyman Cartographer's Seal" "Apprentice Cartographer's Seal" "Master Cartographer's Seal"
+  BaseType == "Divine Orb" "Greater Jeweller's Orb" "Perfect Jeweller's Orb" "Cartographer's Chisel" "Journeyman Cartographer's Seal" "Apprentice Cartographer's Seal" "Master Cartographer's Seal"
   SetTextColor 255 0 0 255
   SetBackgroundColor 255 255 255 255
   SetBorderColor 255 0 0 255
@@ -609,7 +609,7 @@ Show # CURRENCY - High Value
 	
 Show # CURRENCY - Mid Value
   Class == "Stackable Currency"
-  BaseType ==  "Glassblower's Bauble" "Vaal Orb" "Orb of Alchemy" "Regal Orb" "Exotic Coinage" "Gemcutter's Prism" "Chaos Orb" "Exalted Orb"
+  BaseType ==  "Glassblower's Bauble" "Vaal Orb" "Orb of Alchemy" "Regal Orb" "Exotic Coinage" "Gemcutter's Prism" "Chaos Orb" "Exalted Orb" "Orb of Annulment" "Orb of Chance"
 	SetTextColor 255 255 255 255
 	SetBorderColor 255 255 255 255
 	SetBackgroundColor 240 90 35 255
