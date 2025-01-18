@@ -151,11 +151,10 @@ Hide # White Maps Normal
 Show # Simulacrum
 	Class == "Map Fragments"
 	BaseType == "Simulacrum"
-  SetFontSize 45
+  SetFontSize 30
 	SetTextColor 0 0 255 255
 	SetBorderColor 0 0 255 255
 	SetBackgroundColor 255 255 255 255
-  PlayAlertSound 1 300
 	MinimapIcon 0 Grey Triangle
 	PlayEffect Grey
 #--------------------------
@@ -164,7 +163,7 @@ Show # Simulacrum
 	
 Show # Breachstones
   Class == "Breachstones"
-	SetFontSize 35
+	SetFontSize 30
   SetTextColor 184 0 255
   SetBackgroundColor 255 255 255
   SetBorderColor 184 0 255
@@ -276,13 +275,12 @@ Show # Expedition
 	MinimapIcon 1 Purple UpsideDownHouse
 	PlayAlertSound 3 300	
 	
-Show # Expedition-Artifacts
+Hide # Expedition-Artifacts
   BaseType == "Black Scythe Artifact" "Broken Circle Artifact" "Sun Artifact" "Order Artifact"
 	SetFontSize 45
 	SetTextColor 255 85 85 255
 	SetBackgroundColor 61 8 8 255
 	SetBorderColor 255 85 85 255
-	MinimapIcon 1 Purple UpsideDownHouse
 	
 #--------------------------
 # Show Vault Keys
@@ -317,9 +315,6 @@ Hide # Inscribed Ultimatum
 	SetTextColor 255 171 255
 	SetBorderColor 255 0 255 255
 	SetBackgroundColor 100 0 100 255
-	PlayAlertSound 3 300
-	PlayEffect Pink
-	MinimapIcon 0 Pink Circle
 
 #--------------------------
 # Show Relics
@@ -420,9 +415,6 @@ Hide # Charms
 	SetTextColor 191 0 255
 	SetBorderColor 191 0 255
 	SetBackgroundColor  20 20 0
-	PlayAlertSound 16 300
-	MinimapIcon 0 Purple Circle
-	PlayEffect Purple
 
 Hide # Charms
 	Class == "Charm"
@@ -700,19 +692,27 @@ Hide # Uncut Skill Gem
 	SetTextColor 0 255 0 255
 	SetBorderColor 0 255 0
 	SetBackgroundColor 0 0 0
-	
+
 Hide # Uncut Skill Gem
 	BaseType == "Uncut Skill Gem"
-	ItemLevel < 10
-	SetFontSize 20
+  ItemLevel >= 4
+	SetFontSize 35
 	SetTextColor 0 255 0 255
 	SetBorderColor 0 255 0
 	SetBackgroundColor 0 0 0
 
 Show # Uncut Skill Gem
 	BaseType == "Uncut Skill Gem"
-	ItemLevel = 3
+	ItemLevel == 3
 	SetFontSize 30
+	SetTextColor 0 255 0 255
+	SetBorderColor 0 255 0
+	SetBackgroundColor 0 0 0
+	
+Hide # Uncut Skill Gem
+	BaseType == "Uncut Skill Gem"
+	ItemLevel < 3
+	SetFontSize 20
 	SetTextColor 0 255 0 255
 	SetBorderColor 0 255 0
 	SetBackgroundColor 0 0 0
@@ -732,7 +732,7 @@ Show # Uncut Spirit Gem 20
 	MinimapIcon 0 Green Circle
 	PlayEffect Green	
 
-Hide # Uncut Spirit Gem
+Show # Uncut Spirit Gem
 	BaseType == "Uncut Spirit Gem"
 	ItemLevel >= 19
 	SetFontSize 45
@@ -772,7 +772,7 @@ Hide # Uncut Spirit Gem
 # Uncut Support Gem
 #--------------------------
 
-Hide # Uncut Support Gem
+Show # Uncut Support Gem
 	BaseType == "Uncut Support Gem"
 	ItemLevel >= 3
 	SetFontSize 45
@@ -871,7 +871,6 @@ Hide # STR Bases ilvl 80+ Rare
   SetBorderColor 255 0 0
   SetBackgroundColor 30 30 30	
   SetFontSize 35
-  MinimapIcon 2 Red Diamond 
 	PlayEffect Red Temp
 	
 Hide # STR Bases Rare
@@ -891,7 +890,6 @@ Hide # STR Bases ilvl 80+ Magic
   SetBorderColor 255 0 0
   SetBackgroundColor 30 30 30	
   SetFontSize 35
-  MinimapIcon 2 Red Diamond 
 	PlayEffect Red Temp
 	
 Hide # STR Bases Magic
@@ -911,7 +909,6 @@ Hide # STR Bases ilvl 80+ Normal
   SetBorderColor 255 0 0
   SetBackgroundColor 30 30 30	
   SetFontSize 35
-  MinimapIcon 2 Red Diamond 
 	PlayEffect Red Temp
 	
 Hide # STR Bases Normal
@@ -975,7 +972,6 @@ Hide # DEX Bases ilvl 80+ Normal
   SetBorderColor 57 255 20
   SetBackgroundColor 30 30 30	
   SetFontSize 35
-  MinimapIcon 2 Green Diamond 
 	PlayEffect Green Temp
 	
 Hide # DEX Bases Normal
@@ -1019,7 +1015,6 @@ Hide # INT Bases ilvl 80+ Magic
   SetBorderColor 0 0 255
   SetBackgroundColor 30 30 30	
   SetFontSize 35
-  MinimapIcon 2 Blue Diamond 
 	PlayEffect Blue Temp
 	
 Hide # INT Bases Magic
@@ -1265,12 +1260,20 @@ Hide # Non Rare in maps
 
 Show # Rare Jewellery
 	Rarity Rare
-	Class == "Amulets" "Rings" "Belts"
+	Class == "Amulets" "Rings"
 	SetFontSize 35
   SetTextColor 255 255 119
 	SetBorderColor 255 255 119
 	SetBackgroundColor 0 0 0
   MinimapIcon 1 Yellow Triangle
+
+Hide # Rare Jewellery
+	Rarity Rare
+	Class == "Belts"
+	SetFontSize 35
+  SetTextColor 255 255 119
+	SetBorderColor 255 255 119
+	SetBackgroundColor 0 0 0
 
 Show # Rares Expert
 	Rarity Rare
@@ -1306,12 +1309,19 @@ Show # Magic
 	
 Show # Normal Jewellery
 	Rarity Normal Magic
-	Class == "Amulets" "Rings" "Belts"
+	Class == "Amulets" "Rings"
 	SetFontSize 25
 	SetTextColor 180 180 180
 	SetBackgroundColor 0 0 0
   SetBorderColor 180 180 180
   MinimapIcon 1 White Triangle
+
+Hide # Normal Jewellery
+	Rarity Normal Magic
+	Class == "Belts"
+	SetFontSize 25
+	SetTextColor 180 180 180
+	SetBackgroundColor 0 0 0
 	
 Show # Normal
 	Rarity Normal
