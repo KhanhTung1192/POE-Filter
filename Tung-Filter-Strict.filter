@@ -33,7 +33,7 @@ Hide # CURRENCY - SCROLL OF WISDOM
 	
 Show # Red Maps High Rare
 	Class == "Waystones"
-	WaystoneTier >= 14
+	WaystoneTier >= 15
 	Rarity Rare
 	SetFontSize 45
   SetTextColor 251 255 0
@@ -45,7 +45,7 @@ Show # Red Maps High Rare
 	
 Show # Red Maps High Magic
 	Class == "Waystones"
-	WaystoneTier >= 14
+	WaystoneTier >= 15
 	Rarity Magic
 	SetFontSize 45
 	SetFontSize 45
@@ -58,7 +58,7 @@ Show # Red Maps High Magic
 	
 Show # Red Maps High Normal
 	Class == "Waystones"
-	WaystoneTier >= 14
+	WaystoneTier >= 15
 	Rarity Normal
 	SetFontSize 45
   SetTextColor 255 255 255
@@ -75,21 +75,21 @@ Show # Red Maps High Normal
 Hide # Red Maps Low Rare
 	Class == "Waystones"
 	WaystoneTier >= 11
-	WaystoneTier <= 13
+	WaystoneTier <= 14
 	Rarity Rare
 	SetFontSize 45
 	
 Hide # Red Maps Low Magic
 	Class == "Waystones"
 	WaystoneTier >= 11
-	WaystoneTier <= 13
+	WaystoneTier <= 14
 	Rarity Magic
 	SetFontSize 45
 	
 Hide # Red Maps Low Normal
 	Class == "Waystones"
 	WaystoneTier >= 11
-	WaystoneTier <= 13
+	WaystoneTier <= 14
 	Rarity Normal
 	SetFontSize 45
 
