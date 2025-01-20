@@ -600,7 +600,7 @@ Show # CURRENCY - High Value
 	
 Show # CURRENCY - Mid Value
   Class == "Stackable Currency"
-  BaseType ==  "Glassblower's Bauble" "Vaal Orb" "Orb of Alchemy" "Regal Orb" "Exotic Coinage" "Gemcutter's Prism" "Chaos Orb" "Exalted Orb" "Orb of Annulment" "Orb of Chance"
+  BaseType ==  "Glassblower's Bauble" "Vaal Orb" "Orb of Alchemy" "Regal Orb" "Exotic Coinage" "Gemcutter's Prism" "Chaos Orb" "Exalted Orb" "Orb of Annulment" "Orb of Chance" "Artificer's Orb"
 	SetTextColor 255 255 255 255
 	SetBorderColor 255 255 255 255
 	SetBackgroundColor 240 90 35 255
@@ -701,7 +701,7 @@ Hide # Uncut Skill Gem
 	SetBorderColor 0 255 0
 	SetBackgroundColor 0 0 0
 
-Show # Uncut Skill Gem
+Hide # Uncut Skill Gem
 	BaseType == "Uncut Skill Gem"
 	ItemLevel == 3
 	SetFontSize 30
@@ -772,7 +772,7 @@ Hide # Uncut Spirit Gem
 # Uncut Support Gem
 #--------------------------
 
-Show # Uncut Support Gem
+Hide # Uncut Support Gem
 	BaseType == "Uncut Support Gem"
 	ItemLevel >= 3
 	SetFontSize 45
@@ -1293,12 +1293,20 @@ Show # Rares
 	
 Show # Magic Jewellery
 	Rarity  Magic
-	Class == "Amulets" "Rings"
+	Class == "Belts"
 	SetFontSize 25
 	SetTextColor 0 75 250 255
 	SetBorderColor 0 75 250 255
 	SetBackgroundColor 0 20 40 255
   MinimapIcon 1 Blue Triangle
+
+Hide # Magic Jewellery
+	Rarity  Magic
+	Class == "Amulets" "Rings"
+	SetFontSize 25
+	SetTextColor 0 75 250 255
+	SetBorderColor 0 75 250 255
+	SetBackgroundColor 0 20 40 255
 	
 Show # Magic
 	Rarity Magic
