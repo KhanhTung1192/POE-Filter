@@ -578,7 +578,7 @@ Show # CURRENCY - Divine Orb
 	
 Show # CURRENCY - High Value
   Class == "Stackable Currency"
-  BaseType == "Greater Jeweller's Orb" "Perfect Jeweller's Orb" 
+  BaseType ==  "Perfect Jeweller's Orb" 
   SetTextColor 255 0 0 255
   SetBackgroundColor 255 255 255 255
   SetBorderColor 255 0 0 255
@@ -589,7 +589,7 @@ Show # CURRENCY - High Value
 
 Show # CURRENCY - High Value
   Class == "Stackable Currency"
-  BaseType == "Divine Orb" "Greater Jeweller's Orb" "Perfect Jeweller's Orb" "Cartographer's Chisel" "Journeyman Cartographer's Seal" "Apprentice Cartographer's Seal" "Master Cartographer's Seal"
+  BaseType == "Divine Orb" "Perfect Jeweller's Orb" "Cartographer's Chisel" "Journeyman Cartographer's Seal" "Apprentice Cartographer's Seal" "Master Cartographer's Seal"
   SetTextColor 255 0 0 255
   SetBackgroundColor 255 255 255 255
   SetBorderColor 255 0 0 255
@@ -600,7 +600,7 @@ Show # CURRENCY - High Value
 	
 Show # CURRENCY - Mid Value
   Class == "Stackable Currency"
-  BaseType ==  "Glassblower's Bauble" "Vaal Orb" "Orb of Alchemy" "Regal Orb" "Exotic Coinage" "Gemcutter's Prism" "Chaos Orb" "Exalted Orb" "Orb of Annulment" "Orb of Chance" "Artificer's Orb"
+  BaseType ==  "Glassblower's Bauble" "Vaal Orb" "Orb of Alchemy" "Regal Orb" "Exotic Coinage" "Gemcutter's Prism" "Chaos Orb" "Exalted Orb" "Orb of Annulment" "Orb of Chance" "Artificer's Orb" "Greater Jeweller's Orb"
 	SetTextColor 255 255 255 255
 	SetBorderColor 255 255 255 255
 	SetBackgroundColor 240 90 35 255
@@ -620,7 +620,7 @@ Show # CURRENCY - Low Value
 
 Show # ShardsHigh
   Class "Currency"
-  BaseType "Horizon Shard" "Binding Shard" "Engineer's Shard" "Annulment Shard" "Horizon Shard" "Harbinger's Shard" "Ancient Shard" "Exalted Shard" "Chance Shard"
+  BaseType "Horizon Shard" "Binding Shard" "Engineer's Shard" "Annulment Shard" "Horizon Shard" "Harbinger's Shard" "Ancient Shard" "Exalted Shard"
 	SetFontSize 40
   SetTextColor 255 0 0 255
   SetBackgroundColor 0 0 0
@@ -630,7 +630,7 @@ Show # ShardsHigh
 	
 Hide # ShardsLow
 	Class == "Stackable Currency"
-  BaseType == "Alteration Shard" "Transmutation Shard" "Artificer's Shard" "Alchemy Shard"  "Chaos Shard" "Regal Shard"
+  BaseType == "Alteration Shard" "Transmutation Shard" "Artificer's Shard" "Alchemy Shard"  "Chaos Shard" "Regal Shard" "Chance Shard"
 	AreaLevel >= 70
 	SetFontSize 25
   SetTextColor 0 0 0 255
@@ -816,12 +816,23 @@ Show # Gems
 
 Show # Chance Orb Items
   Rarity Normal
-  BaseType == "Sapphire Ring" "Stellar Amulet" 
+  BaseType == "Sapphire Ring"
   SetTextColor 255 0 0 255
   SetBackgroundColor 255 255 255 255
   SetBorderColor 255 0 0 255
   SetFontSize 45
 	PlayAlertSound 1 200
+	MinimapIcon 0 Red Triangle
+	PlayEffect Red	
+
+Show # Chance Orb Items
+  Rarity Normal
+  BaseType == "Stellar Amulet" 
+  SetTextColor 255 0 0 255
+  SetBackgroundColor 255 255 255 255
+  SetBorderColor 255 0 0 255
+  SetFontSize 45
+  	PlayAlertSound ShMirror 300
 	MinimapIcon 0 Red Triangle
 	PlayEffect Red	
 	
@@ -1063,7 +1074,7 @@ Show # Good Bases ilvl 80 - Rare
 
 Show # Good  Bases ilvl 80 - Magic
   Rarity Magic
-  BaseType == "Expert Dualstring Bow" "Attuned Wand" "Siphoning Wand" "Omen Sceptre" "Stoic Sceptre" "Rattling Sceptre" "Expert Barrier Quarterstaff" "Expert Gothic Quarterstaff"
+  BaseType == "Expert Dualstring Bow" "Expert Gothic Quarterstaff"
   AreaLevel >= 80
   SetTextColor 0 75 250 255
   SetBorderColor 254 128 222
@@ -1073,7 +1084,7 @@ Show # Good  Bases ilvl 80 - Magic
 	PlayEffect Pink Temp
 Hide # Good  Bases ilvl 80 - Magic
   Rarity Magic
-  BaseType == "Expert Spiral Wraps" "Expert Hunting Shoes" "Expert Waxed Jacket" "Expert Tribal Mask" "Expert Slicing Quarterstaff" "Expert Zealot Bow" "Rattling Sceptre" "Lupine Sceptre" "Ochre Sceptre" "Clasped Sceptre" "Devouring Sceptre" "Devotional Sceptre" "Wrath Sceptre" "Aromatic Sceptre" "Pious Sceptre" "Hallowed Sceptre"
+  BaseType == "Expert Spiral Wraps" "Expert Hunting Shoes" "Attuned Wand" "Siphoning Wand" "Omen Sceptre" "Stoic Sceptre" "Rattling Sceptre" "Expert Barrier Quarterstaff" "Expert Waxed Jacket" "Expert Tribal Mask" "Expert Slicing Quarterstaff" "Expert Zealot Bow" "Rattling Sceptre" "Lupine Sceptre" "Ochre Sceptre" "Clasped Sceptre" "Devouring Sceptre" "Devotional Sceptre" "Wrath Sceptre" "Aromatic Sceptre" "Pious Sceptre" "Hallowed Sceptre"
 
 Show # Good Bases ilvl 80 - Normal
   Rarity Normal
@@ -1095,7 +1106,7 @@ Hide # Good Bases ilvl 80 - Normal
 	
 Show # Good Bases - Rare
   Rarity Rare
-  BaseType == "Expert Spiral Wraps" "Expert Hunting Shoes" "Expert Waxed Jacket" "Expert Tribal Mask" "Expert Barrier Quarterstaff" "Expert Slicing Quarterstaff" "Expert Gothic Quarterstaff" "Expert Zealot Bow" "Expert Dualstring Bow" "Rattling Sceptre" "Lupine Sceptre" "Ochre Sceptre" "Clasped Sceptre" "Devouring Sceptre" "Devotional Sceptre" "Wrath Sceptre" "Aromatic Sceptre" "Pious Sceptre" "Hallowed Sceptre"
+  BaseType == "Expert Spiral Wraps" "Expert Hunting Shoes" "Expert Waxed Jacket" "Expert Tribal Mask" "Expert Barrier Quarterstaff" "Expert Slicing Quarterstaff" "Expert Gothic Quarterstaff" "Expert Dualstring Bow" "Rattling Sceptre" "Lupine Sceptre" "Ochre Sceptre" "Clasped Sceptre" "Devouring Sceptre" "Devotional Sceptre" "Wrath Sceptre" "Aromatic Sceptre" "Pious Sceptre" "Hallowed Sceptre"
   SetTextColor 255 255 119
   SetBorderColor 254 128 222
   SetBackgroundColor 30 30 30	
